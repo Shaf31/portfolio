@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Get in touch — Elshafey Ahmed</title>
+<title>Get in touch with Elshafey Ahmed</title>
 <meta name="description" content="Elshafey Ahmed, Senior Graphic Designer in Egypt. Key visuals, social campaigns, retouching, identity and packaging for brands across Egypt and the GCC." />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Elshafey Ahmed — Senior Graphic Designer" />
+<meta property="og:title" content="Elshafey Ahmed, senior graphic designer" />
 <meta property="og:description" content="Key visuals, social campaigns, retouching, identity and packaging for brands across Egypt and the GCC." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -35,33 +35,38 @@
   </div>
 </nav>
 
-<section id="contact">
+<section id="contact" class="contact-page">
   <div class="container">
     <h1 class="section-title">Get in touch</h1>
     <div class="contact-box">
-      <p>Got a project, a role, or a wild idea? Tell me below. Sending opens your email app with the message ready.</p>
       <form class="contact-form" id="contact-form">
         <fieldset class="cf-kind">
-          <legend>I'm reaching out about</legend>
+          <legend>I’m reaching out about</legend>
           <label><input type="radio" name="kind" value="Full-time role" required /> A full-time role</label>
           <label><input type="radio" name="kind" value="Freelance project" /> A freelance project</label>
           <label><input type="radio" name="kind" value="Something else" /> Something else</label>
         </fieldset>
-        <label for="cf-name">Name</label>
-        <input type="text" id="cf-name" name="name" placeholder="Your name" required />
-        <label for="cf-email">Email</label>
-        <input type="email" id="cf-email" name="email" placeholder="you@example.com" required />
+        <div class="cf-pair">
+          <div class="cf-field">
+            <label for="cf-name">Name</label>
+            <input type="text" id="cf-name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="cf-field">
+            <label for="cf-email">Email</label>
+            <input type="email" id="cf-email" name="email" placeholder="you@example.com" required />
+          </div>
+        </div>
         <label for="cf-message">Message</label>
-        <textarea id="cf-message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
-        <button type="submit" class="btn send-btn">Open in my email app</button>
+        <textarea id="cf-message" name="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+        <button type="submit" class="btn send-btn">Send by email</button>
       </form>
       <div class="cf-status" id="cf-status" role="status" hidden>
         <p><strong>Your email app should be opening with the message ready.</strong></p>
         <p>Nothing opened? <button type="button" class="cf-copy" id="cf-copy">Copy my email</button> or <a href="https://wa.me/201227525506" target="_blank" rel="noopener">message me on WhatsApp</a>.</p>
       </div>
       <p class="contact-alt">
-        or reach me directly: <a href="mailto:ellshaffey@outlook.com">ellshaffey@outlook.com</a>
-        · <a href="https://wa.me/201227525506" target="_blank" rel="noopener">WhatsApp +20 122 752 5506</a>
+        Or reach me directly at <a href="mailto:ellshaffey@outlook.com">ellshaffey@outlook.com</a>
+        or on <a href="https://wa.me/201227525506" target="_blank" rel="noopener">WhatsApp, +20 122 752 5506</a>.
       </p>
     </div>
   </div>
@@ -83,7 +88,7 @@
       <path d="M50 50 L22 17 A45 45 0 0 1 28 12 Z"/>
     </g>
   </svg>
-  by Elshafey Ahmed — 2026
+  by Elshafey Ahmed in 2026
 </footer>
 
 <script>
