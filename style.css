@@ -553,3 +553,7 @@ button:disabled, input:disabled, textarea:disabled { opacity: .5; cursor: not-al
 @media (max-width: 600px) { .cf-pair { grid-template-columns: minmax(0, 1fr); } }
 .contact-form .cf-kind input:focus-visible { outline-offset: 2px; }
 .contact-form .cf-kind label { --focus: var(--dark); }
+
+/* standalone pages: About, Experience, Skills */
+.page-main { padding-top: 72px; }
+.page-main .section-title { font-size: clamp(2.4rem, 5vw, 4rem); }
