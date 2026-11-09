@@ -31,8 +31,6 @@
   --placeholder: #666666;
   --font-display: 'Archivo Black', sans-serif;
   --font-body: 'Space Grotesk', sans-serif;
-  --footer-bg: #111111;
-  --footer-fg: #f5f1e8;
   --shadow: 4px 4px 0 var(--shade);
   --shadow-lg: 7px 7px 0 var(--shade);
   --border: 3px solid var(--line);
@@ -51,8 +49,6 @@
   --green: #8cc084;
   --blue: #6c9bd2;
   --orange: #d9663a;
-  --footer-bg: #0f0c0a;
-  --footer-fg: #f3e9d8;
   --placeholder: #9a8d79;
   color-scheme: dark;
 }
@@ -65,7 +61,6 @@ body {
   transition: background-color .2s ease, color .2s ease;
   min-height: 100vh; display: flex; flex-direction: column;
 }
-footer { margin-top: auto; }
 .cf-kind { border: 0; display: flex; flex-wrap: wrap; gap: 12px; }
 .cf-kind legend {
   font-family: var(--font-body); font-weight: 700;
@@ -463,12 +458,6 @@ body.lb-open { overflow: clip; }
 .contact-alt { font-size: .95rem !important; margin: 24px 0 0 !important; }
 .contact-alt a { font-weight: 700; }
 
-footer {
-  border-top: var(--border); padding: 24px; text-align: center;
-  font-weight: 700; background: var(--footer-bg); color: var(--footer-fg);
-}
-footer span { color: var(--yellow); }
-footer .claude-logo { width: 1.1em; height: 1.1em; vertical-align: -0.2em; margin: 0 4px; }
 
 @media (max-width: 600px) {
   .nav-inner { flex-wrap: wrap; row-gap: 8px; padding: 12px 16px; }
