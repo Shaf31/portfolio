@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Get in touch with Elshafey Ahmed</title>
+<meta name="description" content="Contact Elshafey Ahmed." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Source+Code+Pro:wght@300;400&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="v2.css" />
+<script src="../theme.js"></script>
+</head>
+<body>
+<header class="top">
+  <a class="mark" href="index.html">Elshafey Ahmed<span>Senior graphic designer</span></a>
+  <nav><a href="index.html">Home</a><a href="about.html">About</a><a href="work.html">Work</a><a href="experience.html">Experience</a><a href="skills.html">Skills</a><a href="contact.html" aria-current="page">Contact</a><button type="button" class="theme-toggle">Dark</button></nav>
+</header>
+<main>
+<section class="intro contact-intro">
+  <p class="label">Contact</p>
+  <h1>Get in touch.</h1>
+  <p class="lede">A role, a freelance brief or something else. Tell me a little and I’ll reply.</p>
+</section>
+<section class="form-wrap">
+  <form class="contact-form" id="contact-form">
+        <fieldset class="cf-kind">
+          <legend>I’m reaching out about</legend>
+          <label><input type="radio" name="kind" value="Full-time role" required /> A full-time role</label>
+          <label><input type="radio" name="kind" value="Freelance project" /> A freelance project</label>
+          <label><input type="radio" name="kind" value="Something else" /> Something else</label>
+        </fieldset>
+        <div class="cf-pair">
+          <div class="cf-field">
+            <label for="cf-name">Name</label>
+            <input type="text" id="cf-name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="cf-field">
+            <label for="cf-email">Email</label>
+            <input type="email" id="cf-email" name="email" placeholder="you@example.com" required />
+          </div>
+        </div>
+        <label for="cf-message">Message</label>
+        <textarea id="cf-message" name="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+        <button type="submit" class="send">Send by email</button>
+      </form>
+      <div class="cf-status" id="cf-status" role="status" hidden>
+        <p><strong>Your email app should be opening with the message ready.</strong></p>
+        <p>Nothing opened? <button type="button" class="cf-copy" id="cf-copy">Copy my email</button> or <a href="https://wa.me/201227525506" target="_blank" rel="noopener">message me on WhatsApp</a>.</p>
+      </div>
+</section>
+</main>
+<footer class="foot"><span>Elshafey Ahmed</span><span>Egypt and the GCC</span><span>© 2026</span></footer>
+<script>
+  var form = document.getElementById('contact-form');
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var name = document.getElementById('cf-name').value.trim();
+    var email = document.getElementById('cf-email').value.trim();
+    var message = document.getElementById('cf-message').value.trim();
+    var subject = encodeURIComponent(form.elements.kind.value + ' inquiry from ' + name);
+    var body = encodeURIComponent(message + '\n\n— ' + name + ' (' + email + ')');
+    document.getElementById('cf-status').hidden = false;
+    window.location.href = 'mailto:ellshaffey@outlook.com?subject=' + subject + '&body=' + body;
+  });
+  document.getElementById('cf-copy').addEventListener('click', function () {
+    var btn = this;
+    navigator.clipboard.writeText('ellshaffey@outlook.com').then(
+      function () { btn.textContent = 'Copied'; },
+      function () { btn.textContent = 'Copy failed: ellshaffey@outlook.com'; }
+    );
+  });
+</script>
+<script>
+  (function () {
+    var b = document.querySelector('.theme-toggle');
+    function label() { b.textContent = document.documentElement.getAttribute('data-theme') === 'dark' ? 'Light' : 'Dark'; }
+    label(); b.addEventListener('click', function () { setTimeout(label, 0); });
+  })();
+</script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-/* Hallmark · edit in the project's own system: neobrutalism (owner's pick), cream light and Warm espresso dark · no theme dealt · hero: stage on the home page, banner on Work and Get in touch · signature: the owner's real work stacked in the hero */
+/* Hallmark · edit in the project's own system: neobrutalism (owner's pick), cream light and pitch black dark · no theme dealt · hero: stage on the home page, banner on Work and Get in touch · signature: the owner's real work stacked in the hero */
 /* Hallmark · pre-emit critique: P4 H4 E4 S4 R3 V3 · weakest: R, hard shadows on nearly every surface; kept because the owner chose neobrutalism, cut the hero eyebrow and four floating shapes instead */
 /* Hallmark · waive 38iii · two highlighted words in the hero only · the pink highlight blocks on visuals and ignored are the owner's neobrutalist signature, used nowhere else on the page */
 /* Hallmark · waive 39b · button.work-item tiles are 188px image thumbnails · each Work thumbnail opens the full image in the viewer, so the tile is the picture, while every real button stays at 44 to 52px */
@@ -37,19 +37,20 @@
   color-scheme: light;
 }
 :root[data-theme="dark"] {
-  --bg: #1a1613;
-  --ink: #f3e9d8;
-  --card-bg: #26201b;
-  --line: #a8977e;
-  --line-strong: #1a1613;
-  --shade: #8a6d2f;
-  --muted: #b8a993;
+  --bg: #000000;
+  --ink: #f2f2f2;
+  --card-bg: #111111;
+  --line: #9a9a9a;
+  --line-strong: #000000;
+  --shade: #5c5c5c;
+  --muted: #a8a8a8;
   --yellow: #f4c95d;
   --pink: #f07aa3;
   --green: #8cc084;
   --blue: #6c9bd2;
   --orange: #d9663a;
-  --placeholder: #9a8d79;
+  --placeholder: #8c8c8c;
+  --void: #0a0a0a;
   color-scheme: dark;
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -477,7 +478,7 @@ body.lb-open { overflow: clip; }
   border-color: var(--line-strong);
 }
 
-/* WARM ESPRESSO (dark theme) */
+/* PITCH BLACK (dark theme) */
 :root[data-theme="dark"] .logo {
   filter: drop-shadow(1px 0 0 var(--ink)) drop-shadow(-1px 0 0 var(--ink))
           drop-shadow(0 1px 0 var(--ink)) drop-shadow(0 -1px 0 var(--ink))
