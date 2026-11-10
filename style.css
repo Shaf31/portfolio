@@ -40,9 +40,9 @@
   --bg: #000000;
   --ink: #f2f2f2;
   --card-bg: #111111;
-  --line: #9a9a9a;
+  --line: #f2f2f2;
   --line-strong: #000000;
-  --shade: #5c5c5c;
+  --shade: #f4c95d;
   --muted: #a8a8a8;
   --yellow: #f4c95d;
   --pink: #f07aa3;
@@ -595,3 +595,17 @@ button:disabled, input:disabled, textarea:disabled { opacity: .5; cursor: not-al
 /* Home: short about line above the client band */
 .home-about { padding: 32px 0; }
 .home-about p { max-width: 860px; font-size: 1rem; line-height: 1.6; font-weight: 500; }
+
+/* Pitch black dark mode: white lines, offset shadows in the accent colours */
+:root[data-theme="dark"] { --shadow: 4px 4px 0 var(--shade); --shadow-lg: 7px 7px 0 var(--shade); }
+:root[data-theme="dark"] .card,
+:root[data-theme="dark"] .btn,
+:root[data-theme="dark"] .contact-box {
+  --shade: var(--pink); --shadow: 4px 4px 0 var(--pink); --shadow-lg: 7px 7px 0 var(--pink);
+}
+:root[data-theme="dark"] .work-item,
+:root[data-theme="dark"] .pick,
+:root[data-theme="dark"] .hero-stack img,
+:root[data-theme="dark"] .hero-stack a {
+  --shade: var(--green); --shadow: 4px 4px 0 var(--green); --shadow-lg: 7px 7px 0 var(--green);
+}
