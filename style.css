@@ -539,8 +539,7 @@ button:disabled, input:disabled, textarea:disabled { opacity: .5; cursor: not-al
 .cf-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
 .cf-field { display: flex; flex-direction: column; gap: 8px; }
 .work-group-head .sub-title { font-size: clamp(1.6rem, 3vw, 2.6rem); }
-.work-group[data-cat="logos"] .work-grid,
-.work-group[data-cat="posters"] .work-grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 420px), 1fr)); }
+.work-group[data-cat="logos"] .work-grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 420px), 1fr)); }
 @media (min-width: 900px) {
   .contact-page .contact-box {
     display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr);
@@ -557,3 +556,23 @@ button:disabled, input:disabled, textarea:disabled { opacity: .5; cursor: not-al
 /* standalone pages: About, Experience, Skills */
 .page-main { padding-top: 72px; }
 .page-main .section-title { font-size: clamp(2.4rem, 5vw, 4rem); }
+
+/* Work: client sections inside each category */
+.client-block { margin-bottom: 40px; }
+.client-name {
+  font-family: var(--font-display); text-transform: uppercase; font-size: 1.05rem;
+  display: flex; align-items: center; gap: 10px; margin: 8px 0 16px;
+}
+.client-name span {
+  font-family: var(--font-body); font-size: .78rem; font-weight: 700; padding: 0 8px;
+  background: var(--yellow); color: var(--dark); border: 2px solid var(--line);
+}
+.work-group.preview .client-block.extra { display: none; }
+.work-group[data-cat="social"] .work-grid,
+.work-group[data-cat="posters"] .work-grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr)); }
+.work-group[data-cat="retouch"] .work-grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); }
+.work-group.preview .client-list {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 8px 24px; align-items: start;
+}
+.work-group.preview .client-block { margin-bottom: 8px; }
+.work-group.preview .client-block .work-grid { grid-template-columns: minmax(0, 1fr); }
