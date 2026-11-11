@@ -49,7 +49,7 @@ h1 { font-weight: 300; font-size: clamp(2.6rem, 7.4vw, 6.6rem); line-height: 1.0
 .index { padding-bottom: clamp(56px, 8vw, 110px); }
 .index ol li { border-bottom: 1px solid var(--rule); }
 .index ol a, .index ol.plain li {
-  display: grid; grid-template-columns: 4rem minmax(0, 1.2fr) minmax(0, 2fr) 4rem; align-items: baseline; gap: 16px;
+  display: grid; grid-template-columns: 4rem minmax(0, 1fr) 4rem; align-items: baseline; gap: 16px;
   padding: clamp(18px, 2.4vw, 28px) 0;
 }
 .index ol.plain li { grid-template-columns: minmax(0, 1.2fr) minmax(0, 2fr) 9rem; }
